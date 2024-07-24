@@ -1,6 +1,6 @@
 ﻿namespace ScooterRental.Models
 {
-    public class ScooterModel
+    public class Scooter
     {
         /// <summary>
         /// Create new instance of the scooter.
@@ -17,14 +17,12 @@
         /// </summary>
         public string Id { get; }
         /// <summary>
-        /// Rental price of the scooter per one
-        minute.
-    /// </summary>
-    public decimal PricePerMinute { get; }
+        /// Rental price of the scooter per one minute.
+        /// </summary>
+        public decimal PricePerMinute { get; }
         /// <summary>
-        /// Identify if someone is renting this
-        scooter.
-    /// </summary>
-    public bool IsRented { get; set; }
+        /// Identify if someone is renting this scooter.
+        /// </summary>
+        public bool IsRented { get; set; }
     }
 }
