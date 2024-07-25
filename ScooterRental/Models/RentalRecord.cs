@@ -2,12 +2,10 @@
 {
     public class RentalRecord
     {
-        public RentalRecord(string scooterId, decimal totalCost, DateTime rentStartTime, DateTime rentEndTime)
+        public RentalRecord(string scooterId, DateTime rentStartTime)
         {
             ScooterId = scooterId;
-            TotalCost = totalCost;
             RentStartTime = rentStartTime;
-            RentEndTime = rentEndTime;
         }
 
         public string ScooterId { get; }
