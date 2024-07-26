@@ -70,8 +70,9 @@ namespace ScooterRental.Services
 
         public decimal CalculateIncome(int? year, bool includeNotCompletedRentals)
         {
-            var income = _rentalRecords.Where(r => !year.HasValue || r.RentStartTime.Year == year.Value)
-                                       .Sum(r => r.TotalCost);
+            var income = _rentalRecords
+                .Where(r => !year.HasValue || r.RentStartTime.Year == year.Value)
+                .Sum(r => r.TotalCost);
 
             if (includeNotCompletedRentals)
             {

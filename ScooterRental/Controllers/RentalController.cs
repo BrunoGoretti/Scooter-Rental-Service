@@ -15,7 +15,7 @@ namespace ScooterRental.Controllers
         }
 
         [HttpPost("start")]
-        public IActionResult StartRent([FromQuery] string id)  // Using [FromQuery] for the query parameter
+        public IActionResult StartRent(string id)
         {
             try
             {
