@@ -9,8 +9,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Register your services here
-builder.Services.AddSingleton<IScooterService, ScooterService>(); // Change to singleton
-builder.Services.AddScoped<IRentalCompany, RentalCompany>();
+builder.Services.AddSingleton<IScooterService, ScooterService>();
+builder.Services.AddSingleton<IRentalCompany, RentalCompany>();
 
 var app = builder.Build();
 

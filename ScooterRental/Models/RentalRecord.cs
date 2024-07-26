@@ -9,8 +9,8 @@
         }
 
         public string ScooterId { get; }
-        public decimal TotalCost { get; }
+        public decimal TotalCost { get; set; }
         public DateTime RentStartTime { get; }
-        public DateTime RentEndTime { get; }
+        public DateTime RentEndTime { get; set; }
     }
 }
