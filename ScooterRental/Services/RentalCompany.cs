@@ -45,7 +45,6 @@ namespace ScooterRental.Services
 
             if (!_ongoingRentals.ContainsKey(id))
                 throw new InvalidOperationException("Scooter is not currently rented.");
-            Console.WriteLine($"Scooter {id} is currently rented. Proceeding to end rent...");
 
             var rentalRecord = _ongoingRentals[id];
             var rentEndTime = DateTime.Now;
