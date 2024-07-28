@@ -1,8 +1,5 @@
 ﻿using ScooterRental.Models;
 using ScooterRental.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace ScooterRental.Services
 {

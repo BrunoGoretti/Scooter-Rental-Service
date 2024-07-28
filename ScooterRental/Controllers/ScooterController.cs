@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ScooterRental.Models;
 using ScooterRental.Services.Interfaces;
 
 namespace ScooterRental.Controllers
