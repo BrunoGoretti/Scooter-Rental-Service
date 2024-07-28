@@ -1,0 +1,9 @@
+global using Xunit;
+global using ScooterRental.Controllers;
+global using ScooterRental.Models;
+global using ScooterRental.Services;
+global using ScooterRental.Services.Interfaces;
+global using Microsoft.AspNetCore.Mvc;
+global using Moq;
+global using System;
+global using System.Threading.Tasks;
