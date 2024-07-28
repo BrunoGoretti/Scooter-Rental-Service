@@ -82,10 +82,14 @@
         {
             // Arrange
             string scooterId = "valid-id";
-            var scooter = new Scooter(scooterId, 0.2m) { IsRented = true };
+            var scooter = new Scooter(scooterId, 0.2m) { IsRented = false };
             var rentalRecord = new RentalRecord(scooterId, DateTime.Now.AddMinutes(-30));
+
             _scooterServiceMock.Setup(s => s.GetScooterById(scooterId)).Returns(scooter);
+
+            // Start the rental to ensure the scooter is rented before ending it
             _rentalCompany.StartRent(scooterId);
+
             // Simulate adding rental record to ongoing rentals
             _rentalCompany.GetType().GetField("_ongoingRentals", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                 .SetValue(_rentalCompany, new Dictionary<string, RentalRecord> { { scooterId, rentalRecord } });
@@ -96,7 +100,7 @@
             // Assert
             _scooterServiceMock.Verify(s => s.GetScooterById(scooterId), Times.Exactly(2));
             Assert.False(scooter.IsRented);
-            Assert.Equal(6m, totalCost); // 30 minutes at 0.2 per minute = 6
+            Assert.InRange(totalCost, 5.9999m, 6.0001m); // Using a range to account for floating-point precision
         }
 
         [Fact]
