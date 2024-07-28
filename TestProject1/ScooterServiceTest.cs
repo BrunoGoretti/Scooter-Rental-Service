@@ -1,6 +1,6 @@
 namespace ScooterRental.Tests
 {
-    public class ScooterServiceTests
+    public class ScooterServiceTest
     {
         private ScooterService CreateService()
         {
