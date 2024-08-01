@@ -10,10 +10,13 @@ The scooter rental service allows users to:
 - Calculate the rental company's income from all rentals and provide yearly reports if requested.
 
 ## How to launch
-Clone my repository in Visual Studio
+
+Clone my repository in Visual Studio.
+
 Create migrations for SQL.
--- dotnet ef migrations add <MigrationName>
--- dotnet ef database update
+
+- dotnet ef migrations add <MigrationName>
+- dotnet ef database update
 
 ## Requirements
 
