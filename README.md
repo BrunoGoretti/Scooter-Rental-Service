@@ -11,7 +11,7 @@ The scooter rental service allows users to:
 
 ## How to launch
 
-Clone my repository in Visual Studio.
+Clone repository in Visual Studio.
 
 Create migrations for SQL.
 
