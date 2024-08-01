@@ -2,8 +2,6 @@
 
 This project is a scooter rental service system, implemented using C# and following OOP design patterns, and S.O.L.I.D principles. The project includes interfaces and classes to manage scooter rentals, calculate rental prices, and generate income reports.
 
-## Project Overview
-
 The scooter rental service allows users to:
 
 - Update the list of available scooters at any time.
