@@ -9,6 +9,12 @@ The scooter rental service allows users to:
 - Calculate the rental price when the rental ends.
 - Calculate the rental company's income from all rentals and provide yearly reports if requested.
 
+## How to launch
+Clone my repository in Visual Studio
+Create migrations for SQL.
+-- dotnet ef migrations add <MigrationName>
+-- dotnet ef database update
+
 ## Requirements
 
 | Requirement                               | Description                                   |
@@ -17,6 +23,7 @@ The scooter rental service allows users to:
 | .NET 8.0 SDK                              | Development framework                         |
 | C# language                               | Programming language                          |
 | Unit testing framework: xUnit             | For unit tests                                |
+| SQL Server                                | For database
 
 ## Design Principles
 
